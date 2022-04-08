@@ -1,0 +1,16 @@
+.prev{
+  width: 100px;
+  position: fixed;
+  z-index: 0;
+  top: 20%;
+  left: 10%;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+.start{
+  background-color: red;
+  top: 50%;
+}

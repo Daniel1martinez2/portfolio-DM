@@ -1,0 +1,40 @@
+.app{
+  position: relative;
+}
+.canvas{
+  /* background-color:red; */
+  display: block;
+  height: 500px !important;
+  width: 50% !important; 
+}
+
+.animation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hand{
+  width: 50px;
+  animation: pulseUp 2s infinite;
+}
+
+@keyframes pulseUp {
+  0% {
+    transform: translateY(0%)
+  }
+  50%{
+    transform: translateY(20%)
+    
+  }
+  100% {
+    transform: translateY(0%)
+    
+  }
+}
+
+@media (max-width: 513px) {
+  .hand{
+    width: 35px;
+  }
+}

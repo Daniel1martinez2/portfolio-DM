@@ -1,0 +1,95 @@
+.about{
+  margin-top: 2em;
+  background-color: #23252B;
+  padding:4em 2em;
+  display: flex;
+  color: #FCFCF9;
+  width: 100vw;
+}
+
+.about h1{
+  font-family: 'Kanit', sans-serif;
+  font-size: 22pt;
+  line-height: 1em;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.about h1::after{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100px;
+  height: 10px;
+  background-color: #D74F36;
+}
+
+
+.hands-container{
+  border-radius: 1.5em;
+  display: flex;
+  width: 50%;
+  /* padding: 2em; */
+  height: fit-content;
+  overflow: hidden;
+}
+
+.hands-container img{
+  width: 100%;
+}
+
+.text{
+  padding: 0 2em;
+  max-width: 50%;
+  /* background-color: red; */
+}
+
+.text p{
+  font-family: 'Lato', sans-serif;
+  max-width: 100%;
+  font-size: 12pt;
+  line-height:1.5em;
+  
+}
+
+@media(max-width: 1200px) {
+  .about{
+    flex-direction: column-reverse;
+  }
+  .hands-container{
+    width: 100%;
+  }
+  .text{
+    /* background-color: yellow; */
+    max-width: 100%;
+    margin-bottom: 2.5em;
+    padding: 0;
+  }
+}
+
+.tag-container{
+  padding: 1em 0;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.tag{
+  font-weight: bold;
+  width: fit-content;
+  padding: 0 1em;
+  border-radius: 100px;
+}
+
+.violet{
+  background-color: #46428F;
+}
+.red{
+  background-color: #D74F36;
+}
+.green{
+  background-color: #327458;
+}
+.yellow{
+  background-color: #E69C37;
+}

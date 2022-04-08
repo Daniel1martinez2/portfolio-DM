@@ -1,0 +1,35 @@
+.card{
+  cursor: pointer;
+  width: 200px;
+  max-width: 400px;
+  min-height: 200px;
+  overflow: hidden;
+  background-color:#F0EDE6;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+.info{
+  font-family: 'Lato', sans-serif;
+  padding: 1em;
+}
+.info h1{
+  font-size: 20px;
+  font-weight: 800;
+  color: #23252B;
+}
+.info p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #35383F;
+}
+
+.card img{
+  height: 55%;
+  object-fit: cover;
+  width: 100%;
+}

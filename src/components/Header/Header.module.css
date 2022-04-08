@@ -1,0 +1,35 @@
+.header{
+  padding: .6em 2em;
+  background-color: #F0EDE6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links{
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  text-decoration: none;
+}
+
+.link{
+  font-size:12pt;
+  font-weight:600;
+  text-decoration: none;
+  color: #23252B;  
+}
+
+.menu-btn{
+  display: none !important;
+}
+
+@media (max-width: 513px) {
+  .links{
+    display: none;   
+  }
+  .menu-btn{
+    display: block !important;
+  }
+}

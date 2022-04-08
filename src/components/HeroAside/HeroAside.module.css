@@ -1,0 +1,94 @@
+.app{
+  position: relative;
+  /* background-color: blue; */
+  height: 470px !important;
+  width: 40% !important;
+  overflow: hidden;
+}
+.canvas{
+  /* background-color:red; */
+  display: block;
+  
+}
+
+.lines{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.star{
+  z-index: 100;
+}
+
+.up{
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  animation: pulseUp 1s infinite;
+}
+
+.down{
+  position: absolute;
+  top: 60%;
+  right: 70%;
+  animation: pulseDown 1s infinite;
+}
+
+@keyframes pulseUp {
+  0% {
+    transform: scale(.5)
+  }
+  50%{
+    transform: scale(1)
+    
+  }
+  100% {
+    transform: scale(.5)
+    
+  }
+}
+@keyframes pulseDown {
+  0% {
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(.5)
+    
+  }
+  100% {
+    transform: scale(1)
+    
+  }
+}
+@keyframes pulseUp {
+  0% {
+    transform: scale(.5)
+  }
+  50%{
+    transform: scale(1)
+    
+  }
+  100% {
+    transform: scale(.5)
+    
+  }
+}
+
+@media(max-width: 450px) {
+  .app{
+    display: none;
+  }
+}
+
+@media(max-width: 700px) {
+  .app{
+    width: 70% !important;
+    height: 300px !important;
+  }
+  .lines{
+    width: 70%;
+  }
+}

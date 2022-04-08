@@ -1,0 +1,32 @@
+.button{
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: .2em;
+  border: none;
+  font-size:12pt;
+  font-weight:600;
+  padding: .2em .5em ;
+  color: #F6F6F6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.green{
+  background-color: #327458;
+}
+
+.right{
+  flex-direction: row-reverse;
+}
+.black{
+  color: #23252B;
+}
+
+.no-color{
+  background-color: transparent;
+}
+.no-color:hover{
+  background-color: #F0EDE6;
+
+}
