@@ -5,6 +5,8 @@ import heury from '../../img/projects/heury.png';
 import wetrain from '../../img/projects/wetrain.png';
 import artgal from '../../img/projects/artgal.png';
 import market from '../../img/projects/market.png';
+import dmi from '../../img/projects/dmi.png';
+import nodi from '../../img/projects/nodi.png';
 
 import arrowLeft from '../../img/arrow-left.svg';
 import arrowRight from '../../img/arrow-right.svg';
@@ -43,17 +45,26 @@ const Projects = () => {
       state: 'right',
       name: 'c4',
       image: market,
-      title: 'UX/UI design study',
-      description: 'Web App based on React',
+      title: 'UX/UI design case',
+      description: 'Usability research',
       style:{
       }
     },
     {
       state: 'right',
       name: 'c5',
-      image: heury,
-      title: 'Heury 5',
-      description: 'Web App based on React',
+      image: dmi,
+      title: 'Design contest',
+      description: 'First place',
+      style:{
+      }
+    },
+    {
+      state: 'right',
+      name: 'c6',
+      image: nodi,
+      title: 'Community app',
+      description: 'HCI research',
       style:{
       }
     },
