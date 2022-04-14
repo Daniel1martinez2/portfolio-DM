@@ -21,7 +21,7 @@ const HeroText = () => {
           opacity: 1,
           'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
           ease: Power3.easeInOut,
-          duration: 1,
+          duration: .5,
           
         }
       );

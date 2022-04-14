@@ -11,7 +11,7 @@ const About = () => {
         <h1>
           Designer & Developer
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras odio vel cursus pharetra. Non, diam id ultrices nisl ipsum. Aliquet pharetra, pellentesque eu lacus viverra odio. Vitae nec odio vitae senectus tellus pellentesque id feugiat amet.</p>
+        <p>As Interactive Media Designer I'm highly qualified for designing and developing applications and experiences which positively impact the business value.</p>
         <div className={styles['tag-container']}>
           <div className={[styles.tag, styles.violet].join(' ')}>
             <p>Frontend</p>

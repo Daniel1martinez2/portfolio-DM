@@ -1,0 +1,149 @@
+.header{
+  background-color: #F0EDE6;
+  padding: 1.2em 2em;
+}
+.title-section{
+  margin-bottom: 1em;
+}
+.title-section h1{
+  font-family: 'Kanit', sans-serif;
+  font-size: 28px;
+  line-height: 1em;
+  color: #4B4E59;
+}
+.home{
+  display: flex;
+  gap: .5em;
+}
+.home img{
+  width: 8px;
+}
+.home{
+  font-family: 'Lato', sans-serif;
+  font-size:12px;
+  font-weight:600;
+  text-decoration: none;
+  color: #23252B;
+}
+
+.cover{
+  width: 100%;
+  height: 100%;
+  background-color: #E69C37;
+  position: absolute;
+  opacity: 0;
+}
+
+.preview-container{
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.preview{
+  position: relative;
+  max-height: 440px;
+  width: 100%;
+  height: 40vw;
+  border-radius: 1em;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.thumbnails{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.thumbnail{
+  width: 12%;
+  height: 8vw;
+  max-width: 100px;
+  max-height: 70px;
+  position: relative;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+.thumbnail > *{
+  border-radius: 8px;
+}
+.active{
+  opacity: 1;
+}
+.active::after{
+  border-radius: 1000px;
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #327458;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: grow  .2s ease-in-out;
+}
+
+.prev{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content{
+  /* background-color:red; */
+  padding:2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper{
+  /* background-color: blue; */
+  max-width: 800px;
+  width: 100%;
+}
+.links-container{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+.links-container h3{
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+.links a{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: .3em;
+  text-decoration: none;
+  color: #46428F;
+  width: fit-content;
+}
+.links a:hover{
+  color: #D74F36;
+}
+
+
+@keyframes grow {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

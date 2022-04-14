@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import styles from './Projects.module.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import heury from '../../img/projects/heury.png';
@@ -7,68 +7,26 @@ import artgal from '../../img/projects/artgal.png';
 import market from '../../img/projects/market.png';
 import dmi from '../../img/projects/dmi.png';
 import nodi from '../../img/projects/nodi.png';
-
+import {data} from '../../util/data';
 import arrowLeft from '../../img/arrow-left.svg';
 import arrowRight from '../../img/arrow-right.svg';
 
 const Projects = () => {
   const [backPic, setBackPic] = useState(null);
-  const [cards, setCards] = useState([
-    {
-      state: 'front',
-      name: 'c1',
-      image: heury,
-      title: 'Heury',
-      description: 'Web App based on React',
-      style:{
-      }
-    },
-    {
-      state: 'right',
-      name: 'c2',
-      image: wetrain,
-      title: 'We Train',
-      description: 'Social Network App',
-      style:{
-      }
-    },
-    {
-      state: 'right',
-      name: 'c3',
-      image: artgal,
-      title: 'Art Gallery',
-      description: 'E-Commerce',
-      style:{
-      }
-    },
-    {
-      state: 'right',
-      name: 'c4',
-      image: market,
-      title: 'UX/UI design case',
-      description: 'Usability research',
-      style:{
-      }
-    },
-    {
-      state: 'right',
-      name: 'c5',
-      image: dmi,
-      title: 'Design contest',
-      description: 'First place',
-      style:{
-      }
-    },
-    {
-      state: 'right',
-      name: 'c6',
-      image: nodi,
-      title: 'Community app',
-      description: 'HCI research',
-      style:{
-      }
-    },
-  ])
+  const projectsData = data.map((p, index) => {
+    let state = index === 0 ? 'front' : 'right';
+    return ({
+      state,
+      style: {},
+      link: `/projects/${p.id}`,
+      image: p.previews[0].prev,
+      title: p.name,
+      id: p.id,
+      description: p.description
+    })
+    
+  })
+  const [cards, setCards] = useState(projectsData)
 
   useEffect(() => {
     setCards(prev => prev.map((card, index) => {
@@ -139,9 +97,10 @@ const Projects = () => {
             img={card.image}
             title={card.title}
             description={card.description}
-            key={card.name}
+            key={card.id}
             className={styles[card.state]}
             style={card.style}
+            link={card.link}
             />
             ))}
         </div>
