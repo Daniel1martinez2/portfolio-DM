@@ -78,7 +78,6 @@ const Projects = () => {
         return {...card, style:{zIndex: 1}}
       }
     }))
-    // console.log(copy, cards)
   }
 
   return (

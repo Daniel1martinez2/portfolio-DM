@@ -1,6 +1,8 @@
 .header{
   background-color: #F0EDE6;
   padding: 1.2em 2em;
+  position: sticky;
+  top: 0;
 }
 .title-section{
   margin-bottom: 1em;

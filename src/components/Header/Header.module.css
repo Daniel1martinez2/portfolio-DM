@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .links{
@@ -18,7 +21,7 @@
   font-size:12pt;
   font-weight:600;
   text-decoration: none;
-  color: #23252B;  
+  color: rgb(35, 37, 43);  
 }
 
 .menu-btn{

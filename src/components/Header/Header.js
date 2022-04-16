@@ -17,7 +17,7 @@ const Header = () => {
           <Link to="#projects" smooth className={styles.link}>Projects</Link>
           <Button 
             text="Contact" 
-            action={() => console.log("hi")}
+            action={() => window.open('mailto:daniel.martinezvillegas2001@gmail.com', '_blank')}
             color="green"
             icon={arrow}
             iconPos="right"

@@ -5,6 +5,7 @@ import {Link, useParams} from 'react-router-dom';
 import { gsap, Power3 } from "gsap";
 import {data as papersData} from '../../util/data.js';
 import { Navigate } from 'react-router-dom';
+import {motion} from 'framer-motion';
 
 const Video = ({vid, style, isThumb}) => {
   return (
@@ -48,7 +49,21 @@ const ProjectDetail = () => {
     );  
   }
   return (
-    <>
+    <motion.div
+      initial={{
+        // opacity: 0,
+        width: 0,
+      }}
+      animate={{
+        // opacity: 1,
+        width: "100%",
+      }}
+      exit={{
+        // opacity: 0,
+        x: window.innerWidth, 
+        transition: {duration: 0.1}
+      }}
+    >
       <div className={styles.header}>
         <Link to="/" className={styles.home}>
           <img src={arrow} alt=""/>
@@ -110,7 +125,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   )
 }
 

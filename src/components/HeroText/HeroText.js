@@ -34,28 +34,28 @@ const HeroText = () => {
       <div className={styles['buttons']}>
         <Button
           text="Github" 
-          action={() => console.log("hi")}
+          action={() => window.open('https://github.com/Daniel1martinez2', '_blank')}
           color="no-color"
           icon={git}
           textColor="black"
         />
         <Button
           text="Behance" 
-          action={() => console.log("hi")}
+          action={() => window.open('https://www.behance.net/thomashawkf7c0', '_blank')}
           color="no-color"
           icon={be}
           textColor="black"
         />
         <Button
           text="Linkedin" 
-          action={() => console.log("hi")}
+          action={() => window.open('https://www.linkedin.com/in/danielmartinezv/', '_blank')}
           color="no-color"
           icon={linkedIn}
           textColor="black"
         />
         <Button
           text="Resume" 
-          action={() => console.log("hi")}
+          action={() => window.open('https://drive.google.com/file/d/1nj1qeeCT8oQwk0Lrk8yZFxd8UdwZhRdq/view?usp=sharing', '_blank')}
           color="green"
           icon={download}
         />
